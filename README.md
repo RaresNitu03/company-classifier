@@ -1,11 +1,11 @@
 
-# 🧠 Company Classifier – Insurance Taxonomy Project
+# Company Classifier – Insurance Taxonomy Project
 
 This project uses semantic similarity and machine learning to classify companies into a predefined insurance taxonomy. It leverages company descriptions, business tags, and sector metadata to assign relevant insurance-related labels.
 
 ---
 
-## 🚀 Recommended: Run the Project Online (Colab)
+## Recommended: Run the Project Online (Colab)
 
 To explore the project interactively **without setting up anything locally**, use the link below:
 
@@ -17,10 +17,10 @@ This will open the notebook in a cloud-based environment, allowing you to:
 - See intermediate outputs and visualizations
 - Test the full classification pipeline in real time
 
-> 📌 **Note**: The Colab version includes annotations, cell outputs, and is ready to run without local setup.
+ **Note**: The Colab version includes annotations, cell outputs, and is ready to run without local setup.
 
 
-## 🗂 Files Included
+## Files Included
 
 - `Company_Classifier.ipynb`: Main notebook with the full classification pipeline.
 - `Last_100.csv`: Subset of companies used for manual validation.
@@ -31,7 +31,7 @@ This will open the notebook in a cloud-based environment, allowing you to:
 
 ---
 
-## 🧪 Project Overview
+## Project Overview
 
 The notebook follows a 10-step pipeline:
 
@@ -49,42 +49,42 @@ The notebook follows a 10-step pipeline:
 
 ---
 
-## 🧠 Technical Overview
+## Technical Overview
 
 The project pipeline combines classic machine learning techniques with modern semantic representation to enable multi-label classification.
 
-### 🔹 Data Preparation
+### 🟣 Data Preparation
 - Each company record includes description, tags, and metadata (sector, category, niche).
 - These fields are concatenated into a single `full_text` string per company.
 
-### 🔹 Embedding & Similarity
+### 🟣 Embedding & Similarity
 - The `full_text` is encoded using a transformer model from `sentence-transformers` to generate a semantic embedding (dense vector).
 - Each insurance label from the taxonomy is also embedded in the same vector space.
 - Cosine similarity is computed between each company vector and all label vectors to determine label relevance.
 
-### 🔹 Pseudo-Labeling Strategy
+### 🟣 Pseudo-Labeling Strategy
 - Top `k` labels (default: 5) are assigned as pseudo-labels if their similarity exceeds a threshold (default: 0.3).
 - If no label passes the threshold, the fallback mechanism selects the top 3 most similar labels.
 
-### 🔹 Model Training
+### 🟣 Model Training
 - A TF-IDF vectorizer transforms the `full_text` into sparse feature vectors.
 - A `LogisticRegression` classifier is trained in a `OneVsRestClassifier` wrapper, enabling multi-label learning.
 - The model is trained only on companies that received pseudo-labels.
 
-### 🔹 Prediction Function
+### 🟣 Prediction Function
 - The trained model predicts label probabilities for each company.
 - If no label passes the probability threshold, the fallback logic selects top 3 labels with highest probabilities.
 
-### 🔹 Evaluation
+### 🟣 Evaluation
 - Final predictions are compared to manually labeled data.
 - Accuracy is computed as the percentage of companies for which at least one predicted label overlaps with a true label.
 
-## 📊 Results
+## Results
 
 The model was evaluated on a manually labeled subset (100 companies) with the goal of achieving high relevance, even in the absence of a complete ground truth.  
 A prediction is considered correct if at least one label overlaps with human annotations.
 
-## 🔧 Local Setup Instructions
+## Local Setup Instructions
 
 To run the project locally, follow these steps:
 
@@ -99,7 +99,7 @@ Make sure the `.csv` files are in the same directory as the notebook when runnin
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Required Python libraries:
 
@@ -121,7 +121,7 @@ Or use the provided `requirements.txt`.
 
 ---
 
-## 👤 Author
+## Author
 
 Built by **Rareș Nițu**  
 This project was developed as part of an AI challenge for insurance sector classification.
@@ -129,7 +129,7 @@ This project was developed as part of an AI challenge for insurance sector class
 
 ---
 
-## 🔗 References & Useful Links
+## References & Useful Links
 
 Here are some useful resources and tools referenced or related to this project:
 
