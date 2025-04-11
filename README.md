@@ -5,6 +5,21 @@ This project uses semantic similarity and machine learning to classify companies
 
 ---
 
+## 🚀 Recommended: Run the Project Online (Colab)
+
+To explore the project interactively **without setting up anything locally**, use the link below:
+
+▶️ **[Open in Google Colab](https://colab.research.google.com/gist/RaresNitu03/ba62580f76321d4985e4dca78c302ee1/insurance_taxonomy_classification.ipynb)**  
+
+This will open the notebook in a cloud-based environment, allowing you to:
+
+- Run each cell step by step
+- See intermediate outputs and visualizations
+- Test the full classification pipeline in real time
+
+> 📌 **Note**: The Colab version includes annotations, cell outputs, and is ready to run without local setup.
+
+
 ## 🗂 Files Included
 
 - `Company_Classifier.ipynb`: Main notebook with the full classification pipeline.
@@ -16,7 +31,7 @@ This project uses semantic similarity and machine learning to classify companies
 
 ---
 
-## 🚀 Project Overview
+## 🧪 Project Overview
 
 The notebook follows a 10-step pipeline:
 
@@ -69,19 +84,6 @@ The project pipeline combines classic machine learning techniques with modern se
 The model was evaluated on a manually labeled subset (100 companies) with the goal of achieving high relevance, even in the absence of a complete ground truth.  
 A prediction is considered correct if at least one label overlaps with human annotations.
 
----
-
-## 🧪 Demo: Run the Project Online (Colab)
-
-You can try the notebook directly in your browser via Google Colab:
-
-▶️ **[Open in Google Colab](https://colab.research.google.com/gist/RaresNitu03/ba62580f76321d4985e4dca78c302ee1/insurance_taxonomy_classification.ipynb)**  
-*(includes interactive execution, outputs, and full explanations)*
-
-> 📌 **Note**: The Colab version includes annotations, cell outputs, and is ready to run without local setup.
-
----
-
 ## 🔧 Local Setup Instructions
 
 To run the project locally, follow these steps:
@@ -121,7 +123,7 @@ Or use the provided `requirements.txt`.
 
 ## 👤 Author
 
-Built by **Rares Nitu**  
+Built by **Rareș Nițu**  
 This project was developed as part of an AI challenge for insurance sector classification.
 
 
