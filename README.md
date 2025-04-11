@@ -75,7 +75,7 @@ A prediction is considered correct if at least one label overlaps with human ann
 
 You can try the notebook directly in your browser via Google Colab:
 
-▶️ **[Open in Google Colab](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID_HERE)**  
+▶️ **[Open in Google Colab](https://colab.research.google.com/gist/RaresNitu03/ba62580f76321d4985e4dca78c302ee1/insurance_taxonomy_classification.ipynb)**  
 *(includes interactive execution, outputs, and full explanations)*
 
 > 📌 **Note**: The Colab version includes annotations, cell outputs, and is ready to run without local setup.
